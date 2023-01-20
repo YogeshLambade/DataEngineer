@@ -1,0 +1,143 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+ans:- Python is a general-purpose language, which means it's designed to be used in a range of applications, including data science, software and web development, automation, and generally getting stuff done and it is high-level language because it is not subject to the processor and easy to read. 
+
+Q2. Why is Python called a dynamically typed language?
+ans:- Python is dynamically  typed language because the type of the variable is determined only during runtime.
+
+Q3. List some pros and cons of Python programming language?
+ans:-Pros:-Beginner-Friendly,Large Community,Flexible and Extensible,Extensive Libraries, Embeddable,Highly Scalable,Portable,Machin Learning
+     Cons:- Issues with Design,Slower than Compiled Language,Security,Work Environment,Python's Memory Consumption and Garbage Collection, Python is Dynamically Typed,Multithreading in      Python
+
+Q4. In what all domains can we use Python?
+ans:- We can use Python in Data Science, Machine Learning, Deep Learning, Artificial Intelligence, Scientific Computing Scripting, Networking, Game Development to Web Development.
+
+Q5. What are variable and how can we declare them?
+ans:- Varible are containers for storing data values.Just name the variable ,Assign the required value to it
+      To declare an integer variable − Name the variable ,Assign an integer value to it x=3
+      Declare a string variable:-Assign a string value to the variable and it will become a string variable. In Python, the string value cane be assigned in single quotes or double quotes.
+      ex.--y='hi'
+      Declare a float variable - A float variable can be declared by assigning float value. Another way is by typecasting. We will use both. e.g--> x=2.0,x=float(2)
+
+Q6. How can we take an input from the user in Python?
+ans:-by using input function
+     name = input("Enter name:")
+     print("name is: " + name)
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+ans:- The default datatype of the value that has been taken as an input using input() function is String.
+
+Q8. What is type casting?
+ans:-The conversion of one data type into the other data type is known as type casting.
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+ans: Yes
+     a,b= input('Enter Firstname'), input('Enter Lastname')
+     print("Firstname is ",a)
+     print("Lastname is ",b)
+     ex2-->
+     x,y=input("Enter two Number").split(",")
+     print(x)
+     print(y)
+
+Q10. What are keywords?
+ans:-Keywords are some predefined and reserved words in python that have special meanings. 
+ 
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+ans:- Yes we can but we shoudn't as it will override the properties of the keyword.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+ans:-Indentation is the leading whitespace (spaces or/and tabs) before any statement in Python.use of indentation to indicate a block of code in python.
+
+Q13. How can we throw some output in Python?
+ans:- Using Print Function we can throw output in Python. ex.-> print("hello")
+
+Q14. What are operators in Python?
+ans:-In Python, operators are special symbols that designate that some sort of computation should be performed.Arithmetic operators
+     Comparison Operators,Logical Operators,Bitwise Operators,Assignment Operators.
+
+Q15. What is difference between / and // operators?
+ans:-The / operator give float result and // operator give integer result.
+
+Q16. Write a code that gives following as an output.
+ans:- x="ineuron"*3
+      print(x)
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+ans:- 
+
+num=float(input("Enter Number : "))
+if num%2 == 0:
+    print({num} ," is Even Number")
+else:
+    print({num}," is Odd Number")
+
+Q18. What are boolean operator?
+ans:-Boolean Operators are those that result in the Boolean values of True and False. 'and','or' are also boolean operator. 
+
+
+Q19. What will the output of the following?
+ans:-
+1 or 0 --> 1
+
+0 and 0 --> 0
+
+True and False and True ---> False
+
+1 or 0 or 0 ----> 1
+
+
+Q20. What are conditional statements in Python?
+ans:-A conditional statement as the name suggests itself, is used to handle conditions in your program. These statements guide the program while making decisions based on the conditions      encountered by the program.
+     Python has 3 key Conditional Statements that you should know:
+     if statement
+     if-else statement
+     if-elif-else ladder
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+ans:The if/elif/else structure is a common way to control the flow of a program, allowing you to execute specific blocks of code depending on the value of some data.if 'if' condition fail
+    it will check for 'elif' it also fails it executes else condition.
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+ans:- 
+age=int(input("Enter age: "))
+if (age>=18):
+    print("I can vote")
+else:
+    print("I can't Vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+ans:-
+numbers = [12, 75, 150, 180, 145, 525, 50]
+sum=0
+for i in numbers:
+    if (i%2==0):
+        sum=sum+i
+print("Sum is ",sum)
+
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+ans:-
+num1,num2,num3=int(input("Enter Num1 ")), int(input("Enter Num2 ")) , int((input("Enter Num3 ")))
+if num1>num2:
+    print(num1, " is greatest")
+elif num2>num3:
+    print(num2, " is greatest")
+else:
+    print(num3, " is greatest")
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+ans:-
+numbers = [12, 75, 150, 180, 145, 525, 50]
+result=[]
+for i in numbers:
+    if i>500:
+        break
+    if i>150:
+        continue
+    if i%5==0:
+        result.append(i)
+        print(i)
+
+print(result)
